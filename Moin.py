@@ -338,10 +338,6 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
                                       "/genkey - Generate a key (Admin only)\n"
                                       "/allusers - Show all users (Admin only)\n"
                                       "/help - Display this help message", reply_markup=main_menu_keyboard())
-
-if __name__ == '__main__':
-    load_data()
-    app = ApplicationBuilder().token(7273137374:AAFwZkObpjNYkAq5YCvyxU9qfINDb4hWnd4).build()
     
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("bgmi", bgmi))
