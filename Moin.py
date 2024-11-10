@@ -341,7 +341,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 if __name__ == '__main__':
     load_data()
-    app = ApplicationBuilder().token(BOT_TOKEN).build()
+    app = ApplicationBuilder().token(7273137374:AAFwZkObpjNYkAq5YCvyxU9qfINDb4hWnd4).build()
     
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("bgmi", bgmi))
